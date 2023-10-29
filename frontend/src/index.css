@@ -56,6 +56,9 @@ header a {
   font-size: 0.9em;
   color: #555;
 }
+
+/* Style for WorkoutDetails Delete Button */
+
 .workout-details span {
   position: absolute;
   top: 20px;
@@ -65,7 +68,14 @@ header a {
   padding: 6px;
   border-radius: 50%;
   color: #333;
+  font-size: 1.2em;
 }
+
+.workout-details span:hover {
+  background: var(--error); /* Change the background color on hover */
+  color: #fff;
+}
+
 
 /* Style for WorkoutForm */
 .create {
@@ -111,7 +121,18 @@ header a {
   background: rgb(29, 199, 151);
 }
 
-.error {
-  color: var(--error);
-  margin-top: 10px;
+input.error {
+  border: 1px solid #f00; /* Red border for the empty field */
+  box-shadow: 0 0 10px 0 rgba(255, 0, 0, 0.5); /* Red glow effect */
 }
+
+
+div.error {
+  background: #fdd;
+  border: 1px solid var(--error);
+  color: #f55;
+  padding: 10px;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+
